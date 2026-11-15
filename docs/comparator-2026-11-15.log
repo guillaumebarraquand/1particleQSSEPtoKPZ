@@ -1,0 +1,181 @@
+Resolving dependencies
+Building Challenge
+⚠ [3251/3252] Replayed Challenge
+warning: Challenge.lean:379:8: declaration uses `sorry`
+warning: Challenge.lean:464:8: declaration uses `sorry`
+warning: Challenge.lean:474:8: declaration uses `sorry`
+warning: Challenge.lean:486:8: declaration uses `sorry`
+warning: Challenge.lean:496:8: declaration uses `sorry`
+warning: Challenge.lean:511:8: declaration uses `sorry`
+warning: Challenge.lean:522:8: declaration uses `sorry`
+warning: Challenge.lean:542:8: declaration uses `sorry`
+Build completed successfully (3252 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, QSSEPtoKPZ.main_theorem, QSSEPtoKPZ.exists_isWaveFunction, QSSEPtoKPZ.isWaveFunction_unique, QSSEPtoKPZ.exists_isWhiteNoise, QSSEPtoKPZ.IsWalshIntegral.ae_eq, QSSEPtoKPZ.IsWalshIntegral.isometry, QSSEPtoKPZ.isMildSolution_unique, QSSEPtoKPZ.IsMildSolution.nonneg, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3265/3436] Replayed QSSEPtoKPZ.Martingales.Defs
+warning: QSSEPtoKPZ/Martingales/Defs.lean:61:6: Variable name `t` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _t
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3307/3436] Replayed QSSEPtoKPZ.TiltedField.Identities
+warning: QSSEPtoKPZ/TiltedField/Identities.lean:294:47: Variable name `hf` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hf
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: QSSEPtoKPZ/TiltedField/Identities.lean:330:48: Variable name `hg` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hg
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3317/3436] Replayed QSSEPtoKPZ.Martingales.Stopping
+warning: QSSEPtoKPZ/Martingales/Stopping.lean:420:5: Variable name `hτT` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hτT
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3327/3436] Replayed QSSEPtoKPZ.ItoIntegral.Elementary
+warning: QSSEPtoKPZ/ItoIntegral/Elementary.lean:507:0: automatically included section variable(s) unused in theorem `QSSEPtoKPZ.ElemIntegrand.integral_adapted`:
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QSSEPtoKPZ/ItoIntegral/Elementary.lean:520:0: automatically included section variable(s) unused in theorem `QSSEPtoKPZ.ElemIntegrand.integral_continuous`:
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QSSEPtoKPZ/ItoIntegral/Elementary.lean:531:0: automatically included section variable(s) unused in theorem `QSSEPtoKPZ.ElemIntegrand.memLp_integral`:
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3337/3436] Replayed QSSEPtoKPZ.ItoIntegral.Integrands
+warning: QSSEPtoKPZ/ItoIntegral/Integrands.lean:45:0: automatically included section variable(s) unused in theorem `QSSEPtoKPZ.IsItoIntegrable.of_tendsto`:
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QSSEPtoKPZ/ItoIntegral/Integrands.lean:427:0: automatically included section variable(s) unused in theorem `QSSEPtoKPZ.IsItoIntegrable.indicator_index`:
+  [Countable ι]
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Countable ι] [IsProbabilityMeasure μ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3395/3436] Replayed QSSEPtoKPZ.Replacement.Poisson
+warning: QSSEPtoKPZ/Replacement/Poisson.lean:203:41: Variable name `hρ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hρ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: QSSEPtoKPZ/Replacement/Poisson.lean:203:70: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3402/3436] Replayed QSSEPtoKPZ.LimitPoints.PathFunctionals
+warning: QSSEPtoKPZ/LimitPoints/PathFunctionals.lean:212:49: Variable name `hφ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hφ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: QSSEPtoKPZ/LimitPoints/PathFunctionals.lean:220:37: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: QSSEPtoKPZ/LimitPoints/PathFunctionals.lean:242:37: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: QSSEPtoKPZ/LimitPoints/PathFunctionals.lean:258:39: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3427/3436] Replayed QSSEPtoKPZ.Replacement.L2Bound
+warning: QSSEPtoKPZ/Replacement/L2Bound.lean:80:38: Variable name `hρ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hρ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3556/3641] Replayed QSSEPtoKPZ.WhiteNoise.Prop72Noise
+warning: QSSEPtoKPZ/WhiteNoise/Prop72Noise.lean:73:74: Variable name `hY` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hY
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: QSSEPtoKPZ/WhiteNoise/Prop72Noise.lean:78:5: Variable name `hdens` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hdens
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3566/3641] Replayed QSSEPtoKPZ.Uniqueness.HeatKernel
+warning: QSSEPtoKPZ/Uniqueness/HeatKernel.lean:139:58: Variable name `hf` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hf
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3568/3641] Replayed QSSEPtoKPZ.Uniqueness.HeatTest
+warning: QSSEPtoKPZ/Uniqueness/HeatTest.lean:192:79: Variable name `ht` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ht
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3581/3641] Replayed QSSEPtoKPZ.Uniqueness.Prop73
+warning: QSSEPtoKPZ/Uniqueness/Prop73.lean:38:39: Variable name `hT` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hT
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3640/3641] Replayed Solution
+warning: Solution.lean:93:34: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:93:38: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:93:38: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Solution.lean:115:32: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:115:36: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:115:36: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Build completed successfully (3641 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, QSSEPtoKPZ.main_theorem, QSSEPtoKPZ.exists_isWaveFunction, QSSEPtoKPZ.isWaveFunction_unique, QSSEPtoKPZ.exists_isWhiteNoise, QSSEPtoKPZ.IsWalshIntegral.ae_eq, QSSEPtoKPZ.IsWalshIntegral.isometry, QSSEPtoKPZ.isMildSolution_unique, QSSEPtoKPZ.IsMildSolution.nonneg, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+
+real	1m59,447s
+user	0m18,995s
+sys	0m0,793s

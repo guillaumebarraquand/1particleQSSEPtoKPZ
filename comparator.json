@@ -1,0 +1,20 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "QSSEPtoKPZ.main_theorem",
+    "QSSEPtoKPZ.exists_isWaveFunction",
+    "QSSEPtoKPZ.isWaveFunction_unique",
+    "QSSEPtoKPZ.exists_isWhiteNoise",
+    "QSSEPtoKPZ.IsWalshIntegral.ae_eq",
+    "QSSEPtoKPZ.IsWalshIntegral.isometry",
+    "QSSEPtoKPZ.isMildSolution_unique",
+    "QSSEPtoKPZ.IsMildSolution.nonneg"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": false
+}
