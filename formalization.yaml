@@ -1,0 +1,176 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+
+project:
+  name: "Convergence of the one-particle quantum symmetric simple exclusion process to the KPZ equation"
+  description: >-
+    A complete Lean 4 / Mathlib formalization of the main theorem (Theorem 1.2) of
+    G. Barraquand, "Convergence of the one-particle quantum symmetric simple exclusion
+    process to the KPZ equation" (2026). In the one-particle quantum symmetric simple
+    exclusion process (QSSEP) on a box of size L in Z (or on Z), a wave function evolves
+    unitarily under hopping amplitudes given by independent complex Brownian motions, and
+    its squared modulus P(t,x) is a random probability distribution on the lattice. The
+    theorem states that, in a window of size n^{1/2} at distance of order n^{3/4} from the
+    origin, the suitably tilted and rescaled measures built from P converge in
+    distribution, in the space C([0,T], M_+(R)) of continuous paths of finite measures with
+    the weak topology, to the solution Z of the multiplicative stochastic heat equation
+    started from a Dirac mass (whose logarithm solves the KPZ equation), for every sequence
+    n_k going to infinity and all system sizes L_k with L_k / n_k^{3/4} going to infinity.
+    The statement quantifies over every realization of the QSSEP and every solution of the
+    stochastic heat equation on arbitrary filtered probability spaces. Since Mathlib has no
+    stochastic integration, the Ito integral (as a limit in probability of Riemann sums),
+    space-time white noise and the Ito-Walsh integral are defined in elementary terms in the
+    statement file. Seven companion theorems show that these definitions are not vacuous
+    and determine the objects: existence and pathwise uniqueness of the wave function,
+    existence of a space-time white noise, well-posedness and Ito's isometry for the
+    Walsh integral, uniqueness and nonnegativity of the solution of the stochastic heat
+    equation. All eight theorems are proved from Mathlib and the standard axioms.
+  authors:
+    - name: "Guillaume Barraquand"
+      orcid: "0000-0003-0082-7510"
+  license: "Apache-2.0"
+  responsible_maintainers:
+    - name: "Guillaume Barraquand"
+      orcid: "0000-0003-0082-7510"
+
+classification:
+  arxiv: ["math.PR", "math-ph"]
+  msc2020: ["60H15", "82C22", "60F05", "60K35", "81S22"]
+
+sources:
+  - title: "Convergence of the one-particle quantum symmetric simple exclusion process to the KPZ equation"
+    authors:
+      - name: "Guillaume Barraquand"
+        orcid: "0000-0003-0082-7510"
+    type: "paper"
+    relationship: "formalizes"
+    note: >-
+      Preprint (2026), not yet publicly available at the time of this submission; a later
+      version of this entry will add its arXiv identifier. The formalization proves Theorem 1.2
+      of the article, following its proof section by section; DEVIATIONS.md lists where the
+      formal proof departs from the printed proofs. The author of the article commissioned the
+      formalization and approved its statements.
+    author_endorsement: "participated"
+
+related_formalizations: []
+
+status:
+  scope: >-
+    Formalized and proved: Theorem 1.2 of the article (QSSEPtoKPZ.main_theorem), for every
+    sequence n_k >= 1 tending to infinity and all sizes L_k in Z_{>=1} or infinity with
+    L_k / n_k^{3/4} -> infinity, and seven companion statements (existence and uniqueness of
+    the wave function, existence of white noise, well-posedness and isometry of the Walsh
+    integral, uniqueness and nonnegativity of the solution of the stochastic heat equation).
+    Not formalized: the existence of a continuous solution of the stochastic heat equation
+    started from a Dirac mass, a known result (Bertini-Cancrini, Chen-Dalang) which the
+    theorem does not need, since it quantifies over all solutions. The Cole-Hopf solution
+    h = log Z of the KPZ equation, mentioned in the article's statement, is not part of the
+    formal statement. Choices made in the definitions (stochastic integrals, white noise via
+    its distribution function, filtrations without the usual conditions, mild solutions
+    continuous on (0, infinity) x R, the measure Z(t,x) dx written with the positive part
+    of Z) are listed in README.md.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: []
+
+automation:
+  methods:
+    - method: "agent"
+      models: ["Claude Opus 5.5", "Claude Fable 5.2"]
+      framework: "Claude Code"
+      tool_setup: >-
+        The Lean code was written by Claude agents. Fable 5.2 wrote the formal statement and
+        the plan (11 November 2026); Opus 5.5 wrote the companion statements, the Challenge
+        and Solution files and all proofs (12-13 November 2026), as a main session dispatching
+        about 110 agents, each in a fresh context and its own git worktree, for design,
+        statements, interfaces, independent audits and proof tasks. Lean, Lake, Mathlib and
+        lake comparator were used as tools; the author worked through the conversation only
+        and wrote no Lean.
+      cost:
+        wall_time: "About 3 days (11-13 November 2026), including 5 proof stages of 1 to 6 hours each with up to 8 agents in parallel"
+        spend_usd: "Subscription-based; about 30 USD API-equivalent for the statement session, plus two test runs of 3.60 and 5.65 USD"
+        hardware: "Local machine (Linux) for builds; models through the Claude service"
+      prompting_notes: >-
+        The author fixed the conventions of the statement and approved the statements of
+        each stage before they were proved; agents worked from written design documents and
+        task rules, and a proved statement could not be changed without the author's
+        approval. The stage documents are in docs/.
+  spend_usd: "Subscription-based; not tracked precisely"
+  notes: >-
+    Statement first: the definitions, Theorem 1.2 and the companion statements were
+    written and approved by the author (Stage 0) before any proof, then frozen. The proof was
+    divided into five stages following the sections of the article; at each stage an agent
+    wrote the intermediate statements, an independent agent audited them, and the author
+    approved them before the proofs were written. The author is the author of the article and
+    is responsible for this formalization.
+
+fidelity:
+  divergences: >-
+    The formal statement departs from the article as explained in README.md ("Choices made
+    in the formal statement"): stochastic integrals defined elementarily, the scaling
+    parameter as a sequence n_k, Z(t,x) dx written as max(Z(t,x), 0) dx (equal since Z >= 0,
+    which is the proved companion IsMildSolution.nonneg), the Cole-Hopf solution omitted.
+    The proof departs from the printed proofs where a cited theorem is not in Mathlib or a
+    step is compressed; these departures are listed in DEVIATIONS.md. No step of the
+    article was found to fail.
+
+review:
+  status: "author-verified"
+  reviewers:
+    - "Guillaume Barraquand"
+  notes: >-
+    The author read and approved the 17 definitions and 8 theorems of Challenge.lean before
+    any proof was written (docs/stage0-review.md), after a read-back of the Lean code by an
+    independent agent that did not see the article. Intermediate statements were audited by
+    independent agents and approved by the author at each stage; a parse audit
+    (docs/parse-audit.md) checked all approved statements for misread notation. The proofs
+    are checked by Lean only: lake comparator accepts Solution against Challenge, and with
+    --paranoid also Lean's paranoid kernel, lean4lean, nanoda, con-leche and con-ron
+    (docs/comparator-*.log). The Lean proofs have not been read by a human.
+
+alignment:
+  namespace: "QSSEPtoKPZ"
+  statements:
+    - source: "Theorem 1.2"
+      lean: "QSSEPtoKPZ.main_theorem"
+      module: "Challenge"
+      status: "proved"
+      note: "For every sequence n_k and sizes L_k with L_k / n_k^{3/4} -> infinity; see README.md for the choices made in the statement."
+    - source: "Proposition 2.1 (existence) and Section 1.3"
+      lean: "QSSEPtoKPZ.exists_isWaveFunction"
+      module: "Challenge"
+      status: "proved"
+      note: "Companion E1: the wave function exists for every L."
+    - source: "Proposition 2.1 (uniqueness)"
+      lean: "QSSEPtoKPZ.isWaveFunction_unique"
+      module: "Challenge"
+      status: "proved"
+      note: "Companion U1: pathwise uniqueness for every L."
+    - source: "Section 7 (space-time white noise)"
+      lean: "QSSEPtoKPZ.exists_isWhiteNoise"
+      module: "Challenge"
+      status: "proved"
+      note: "Companion E2: a space-time white noise exists."
+    - source: "Section 7.2 (Ito-Walsh integral)"
+      lean: "QSSEPtoKPZ.IsWalshIntegral.ae_eq"
+      module: "Challenge"
+      status: "proved"
+      note: "Companion W: the Walsh integral of a field is determined up to null sets."
+    - source: "Section 7.2 (Ito's isometry)"
+      lean: "QSSEPtoKPZ.IsWalshIntegral.isometry"
+      module: "Challenge"
+      status: "proved"
+      note: "Companion W: square integrability and Ito's isometry."
+    - source: "Section 7.3 (uniqueness for the stochastic heat equation)"
+      lean: "QSSEPtoKPZ.isMildSolution_unique"
+      module: "Challenge"
+      status: "proved"
+      note: "Companion U3: two solutions driven by the same noise are indistinguishable on (0, infinity) x R."
+    - source: "Section 1.4 (positivity of the solution)"
+      lean: "QSSEPtoKPZ.IsMildSolution.nonneg"
+      module: "Challenge"
+      status: "proved"
+      note: "Companion P: nonnegativity, deduced from the convergence; strict positivity (Mueller, Moreno) is not formalized."
+
+acknowledgements: >-
+  Mathlib and the Lean FRO's comparator; the Lean code was written with Claude (Anthropic).

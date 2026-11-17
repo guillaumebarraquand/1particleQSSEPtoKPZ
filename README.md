@@ -30,6 +30,8 @@ Not formalized: the existence of a continuous solution of the stochastic heat eq
 | `QSSEPtoKPZ/` (other folders) | the proof, organized by sections of the article: `WaveFunction/` (Section 2), `TiltedField/` (3), `SecondMoments/` (4), `Tightness/` (5), `Replacement/` (6), `LimitPoints/`, `WhiteNoise/`, `Uniqueness/` (7), `FiniteSystems/` (8 and Section 2.1), `Assembly/` (end of the proof); generic tools in `Martingales/` and `ItoIntegral/` |
 | `docs/` | for each stage: the statements approved by the author (`stageN-statements`), the design, the interfaces, an independent audit, and a report; `parse-audit` (a check of all approved statements for misread notation); the comparator logs |
 | `DEVIATIONS.md` | where the formal proof departs from the printed proofs of the article |
+| `formalization.yaml` | metadata for the [Palomar](https://palomar-registry.org) registry: sources, scope, authorship, use of AI, review |
+| `.github/workflows/palomar-preflight.yml` | Palomar's mechanical verification, run by hand from the Actions tab (advisory) |
 
 ## How to check it
 
